@@ -14,13 +14,14 @@ Currently only supports big O with respect to one variable (cannot handle O(m*n)
 Details on how to use and what each argument means are inside estimate_complexity.py file in the main class called Complexity
 
 Example:
-```
-from estimate_complexity.estimate_complexity import Complexity
 
-x = Complexity(sort, lambda n: ([range(n)], {}))
-print(x.get_complexity()) # should print 'nlog(n)'
-x.draw_plot_with_all() # draws plots of fitted functions
-```
+.. code-block:: python
+
+  from estimate_complexity.estimate_complexity import Complexity
+
+  x = Complexity(sort, lambda n: ([range(n)], {}))
+  print(x.get_complexity()) # should print 'nlog(n)'
+  x.draw_plot_with_all() # draws plots of fitted functions
 
 Credits
 ---------
